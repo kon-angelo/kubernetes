@@ -23,7 +23,7 @@ set -o pipefail
 
 if [ "$#" -lt 5 ] || [ "${1}" == "--help" ]; then
   cat <<EOF
-Usage: $(basename "$0") <generators> <output-package> <internal-apis-package> <extensiona-apis-package> <groups-versions> ...
+Usage: $(basename "$0") <generators> <output-package> <internal-apis-package> <extensions-apis-package> <groups-versions> ...
 
   <generators>        the generators comma separated to run (deepcopy,defaulter,conversion,client,lister,informer,openapi) or "all".
   <output-package>    the output package name (e.g. github.com/example/project/pkg/generated).
